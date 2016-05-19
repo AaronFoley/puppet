@@ -1,3 +1,6 @@
- node default {
-	 class { 'base': }
- }
+# use hiera for node definition
+hiera_include('classes')
+
+
+
+
