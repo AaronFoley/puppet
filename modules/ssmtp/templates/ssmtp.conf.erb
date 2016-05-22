@@ -6,41 +6,41 @@
 #
 
 Root=<%= scope['ssmtp::root'] %>
-Mailhub=<%= scope['ssmtp::mail_hub']  %>
+Mailhub=<%= scope['ssmtp::mail_hub'] %>
 
-FromLineOverride=<%= scope['ssmtp::from_line_override']%>
+FromLineOverride=<%= scope['ssmtp::from_line_override'] %>
 
-<% if scope['ssmtp::hostname']-%>
-Hostname=<%= scope['ssmtp::hostname']%>
+<% if !scope['ssmtp::hostname'].nil? %>
+Hostname=<%= scope['ssmtp::hostname'] %>
 <% end -%>
-<% if scope['ssmtp::rewritedomain']-%>
-RewriteDomain=<%= scope['ssmtp::rewritedomain']%>
+<% if !scope['ssmtp::rewritedomain'].nill? %>
+RewriteDomain=<%= scope['ssmtp::rewritedomain'] %>
 <% end -%>
 
-<% if scope['ssmtp::authuser']-%>
-AuthUser=<%= scope['ssmtp::authuser']%>
+<% if !scope['ssmtp::authuser'].nill? %>
+AuthUser=<%= scope['ssmtp::authuser'] %>
 <% end -%>
-<%- if scope['ssmtp::authpass']-%>
-AuthPass=<%= scope['ssmtp::authpass']%>
+<%- if !scope['ssmtp::authpass'].nill? %>
+AuthPass=<%= scope['ssmtp::authpass'] %>
 <% end -%>
-<% if scope['ssmtp::authmethod']-%>
-AuthMethod=<%= scope['ssmtp::authmethod']%>
+<% if !scope['ssmtp::authmethod'].nill? %>
+AuthMethod=<%= scope['ssmtp::authmethod'] %>
 <% end -%>
-<% if scope['ssmtp::usetls']-%>
-UseTLS=<%= scope['ssmtp::usetls']%>
+<% if !scope['ssmtp::usetls'].nill? %>
+UseTLS=<%= scope['ssmtp::usetls'] %>
 <% end -%>
-<% if scope['ssmtp::usestarttls']-%>
-UseSTARTTLS=<%= scope['ssmtp::usestarttls']%>
+<% if !scope['ssmtp::usestarttls'].nill? %>
+UseSTARTTLS=<%= scope['ssmtp::usestarttls'] %>
 <% end -%>
-<% if scope['ssmtp::tlscert']-%>
-TLSCert=<%= scope['ssmtp::tlscert']%>
+<% if !scope['ssmtp::tlscert'].nill? %>
+TLSCert=<%= scope['ssmtp::tlscert'] %>
 <% end -%>
-<% if scope['ssmtp::tlskey']-%>
-TLSKey=<%= scope['ssmtp::tlskey']%>
+<% if !scope['ssmtp::tlskey'].nill? %>
+TLSKey=<%= scope['ssmtp::tlskey'] %>
 <% end -%>
-<% if scope['ssmtp::tls_ca_file']-%>
-TLS_CA_File=<%= scope['ssmtp::tls_ca_file']%>
+<% if !scope['ssmtp::tls_ca_file'].nill? %>
+TLS_CA_File=<%= scope['ssmtp::tls_ca_file'] %>
 <% end -%>
-<% if scope['ssmtp::tls_ca_dir']-%>
-TLS_CA_Dir=<%= scope['ssmtp::tls_ca_dir']%>
+<% if !scope['ssmtp::tls_ca_dir'].nill? %>
+TLS_CA_Dir=<%= scope['ssmtp::tls_ca_dir'] %>
 <% end -%>
