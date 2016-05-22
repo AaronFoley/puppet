@@ -5,42 +5,30 @@
 # managed by Puppet, local changes will be overwritten
 #
 
-Root=<%= scope['ssmtp::root'] %>
-Mailhub=<%= scope['ssmtp::mail_hub'] %>
+Root=<%= @root %>
+Mailhub=<%= @mail_hub %>
 
-FromLineOverride=<%= scope['ssmtp::from_line_override'] %>
+FromLineOverride=<%= @from_line_override %>
 
-<% if !scope['ssmtp::hostname'].nil? %>
-Hostname=<%= scope['ssmtp::hostname'] %>
+<% if @hostname -%>
+Hostname=<%= @hostname %>
 <% end -%>
-<% if (scope['ssmtp::rewritedomain'] != nil) %>
-RewriteDomain=<%= scope['ssmtp::rewritedomain'] %>
+<% if @rewritedomain -%>
+RewriteDomain=<%= @rewritedomain %>
 <% end -%>
 
-<% if (scope['ssmtp::authuser'] != nil) %>
-AuthUser=<%= scope['ssmtp::authuser'] %>
+<% if @authuser -%>
+AuthUser=<%= @authuser %>
 <% end -%>
-<%- if (scope['ssmtp::authpass'] != nil) %>
-AuthPass=<%= scope['ssmtp::authpass'] %>
+<%- if @authpass -%>
+AuthPass=<%= @authpass %>
 <% end -%>
-<% if (scope['ssmtp::authmethod'] != nil) %>
-AuthMethod=<%= scope['ssmtp::authmethod'] %>
+<% if @authmethod -%>
+AuthMethod=<%= @authmethod %>
 <% end -%>
-<% if (scope['ssmtp::usetls'] != nil) %>
-UseTLS=<%= scope['ssmtp::usetls'] %>
+<% if @usetls -%>
+UseTLS=<%= @usetls %>
 <% end -%>
-<% if (scope['ssmtp::usestarttls'] != nil) %>
-UseSTARTTLS=<%= scope['ssmtp::usestarttls'] %>
-<% end -%>
-<% if (scope['ssmtp::tlscert'] != nil) %>
-TLSCert=<%= scope['ssmtp::tlscert'] %>
-<% end -%>
-<% if (scope['ssmtp::tlskey'] != nil) %>
-TLSKey=<%= scope['ssmtp::tlskey'] %>
-<% end -%>
-<% if (scope['ssmtp::tls_ca_file'] != nil) %>
-TLS_CA_File=<%= scope['ssmtp::tls_ca_file'] %>
-<% end -%>
-<% if (scope['ssmtp::tls_ca_dir'] != nil) %>
-TLS_CA_Dir=<%= scope['ssmtp::tls_ca_dir'] %>
+<% if @usestarttls -%>
+UseSTARTTLS=<%= @usestarttls %>
 <% end -%>

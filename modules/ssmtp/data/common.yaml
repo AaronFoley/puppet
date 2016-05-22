@@ -9,7 +9,6 @@ ssmtp::hostname: ~
 ssmtp::from_line_override: 'yes'
 ssmtp::usetls: ~
 ssmtp::usestarttls: ~
-ssmtp::tlscert: ~
 ssmtp::authuser: ~
 ssmtp::authpass: ~
 ssmtp::authmethod: ~

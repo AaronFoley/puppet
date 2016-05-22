@@ -9,7 +9,6 @@ class ssmtp (
     $from_line_override,
     $usetls,
     $usestarttls,
-    $tlscert,
     $authuser,
     $authpass,
     $authmethod
