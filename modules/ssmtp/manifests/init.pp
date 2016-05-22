@@ -7,9 +7,9 @@ class ssmtp (
     $rewrite_domain,
     $hostname,
     $from_line_override,
-    $useTLS,
-    $useSTARTTLS,
-    $TLSCert,
+    $usetls,
+    $usestarttls,
+    $tlscert,
     $authuser,
     $authpass,
     $authmethod

@@ -7,9 +7,9 @@ ssmtp::mail_hub: ~
 ssmtp::rewrite_domain: ~
 ssmtp::hostname: ~
 ssmtp::from_line_override: ~
-ssmtp::useTLS: ~
-ssmtp::useSTARTTLS: ~
-ssmtp::TLSCert: ~
+ssmtp::usetls: ~
+ssmtp::usestarttls: ~
+ssmtp::tlscert: ~
 ssmtp::authuser: ~
 ssmtp::authpass: ~
 ssmtp::authmethod: ~
