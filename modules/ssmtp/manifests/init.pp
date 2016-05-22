@@ -1,7 +1,7 @@
 class ssmtp (
     $ssmtp_conf,
     $revaliases_conf,
-    $package,
+    $package_name,
     $root,
     $mail_hub,
     $rewrite_domain,

@@ -1,6 +1,6 @@
 ssmtp::ssmtp_conf: "/etc/ssmtp/ssmtp.conf"
 ssmtp::revaliases_conf: "/etc/ssmtp/revaliases"
-ssmtp::package: "ssmtp"
+ssmtp::package_name: "ssmtp"
 
 ssmtp::root: ~
 ssmtp::mail_hub: ~
