@@ -6,7 +6,7 @@ ssmtp::root: ~
 ssmtp::mail_hub: ~
 ssmtp::rewrite_domain: ~
 ssmtp::hostname: ~
-ssmtp::from_line_override: ~
+ssmtp::from_line_override: 'yes'
 ssmtp::usetls: ~
 ssmtp::usestarttls: ~
 ssmtp::tlscert: ~

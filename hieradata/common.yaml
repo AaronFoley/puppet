@@ -1,3 +1,7 @@
 ---
 classes:
   - base
+
+ssmtp::root: 'aaron.s.foley@gmail.com'
+ssmtp::hostname: '%{trusted.certname}'
+ssmtp::mail_hub: 'mail.muffin.rocks:587'
