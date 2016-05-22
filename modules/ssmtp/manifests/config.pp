@@ -6,7 +6,7 @@ class ssmtp::config {
             owner   => 'root',
             group   => 'mail',
             path    => $ssmtp::ssmtp_conf,
-            content => template('ssmtp.conf.erb')
+            content => template('ssmtp/ssmtp.conf.erb')
     }
 
     # file {
