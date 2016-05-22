@@ -1,0 +1,17 @@
+---
+version: 4
+datadir: hieradata
+hierarchy:
+  - name: "Nodes"
+    backend: yaml
+    path: "nodes/%{trusted.certname}"
+
+  - name: "common"
+    backend: yaml
+
+  - name: "secure"
+    backend: yaml
+    path: "secure/%{trusted.certname}"
+
+  - name: "secure/common"
+    backend: yaml

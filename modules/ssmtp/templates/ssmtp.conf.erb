@@ -1,0 +1,46 @@
+### ssmtpd.conf
+#
+# sSMTP configuation file
+#
+# managed by Puppet, local changes will be overwritten
+#
+
+Root=<%= scope['ssmtp::root'] %>
+Mailhub=<%= scope['ssmtp::mail_hub']  %>
+
+FromLineOverride=<%= scope['ssmtp::from_line_override']%>
+
+<% if scope['ssmtp::hostname']-%>
+Hostname=<%= scope['ssmtp::hostname']%>
+<% end -%>
+<% if scope['ssmtp::rewritedomain']-%>
+RewriteDomain=<%= scope['ssmtp::rewritedomain']%>
+<% end -%>
+
+<% if scope['ssmtp::authuser']-%>
+AuthUser=<%= scope['ssmtp::authuser']%>
+<% end -%>
+<%- if scope['ssmtp::authpass']-%>
+AuthPass=<%= scope['ssmtp::authpass']%>
+<% end -%>
+<% if scope['ssmtp::authmethod']-%>
+AuthMethod=<%= scope['ssmtp::authmethod']%>
+<% end -%>
+<% if scope['ssmtp::usetls']-%>
+UseTLS=<%= scope['ssmtp::usetls']%>
+<% end -%>
+<% if scope['ssmtp::usestarttls']-%>
+UseSTARTTLS=<%= scope['ssmtp::usestarttls']%>
+<% end -%>
+<% if scope['ssmtp::tlscert']-%>
+TLSCert=<%= scope['ssmtp::tlscert']%>
+<% end -%>
+<% if scope['ssmtp::tlskey']-%>
+TLSKey=<%= scope['ssmtp::tlskey']%>
+<% end -%>
+<% if scope['ssmtp::tls_ca_file']-%>
+TLS_CA_File=<%= scope['ssmtp::tls_ca_file']%>
+<% end -%>
+<% if scope['ssmtp::tls_ca_dir']-%>
+TLS_CA_Dir=<%= scope['ssmtp::tls_ca_dir']%>
+<% end -%>
