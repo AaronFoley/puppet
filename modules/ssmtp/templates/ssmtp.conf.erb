@@ -10,25 +10,25 @@ Mailhub=<%= @mail_hub %>
 
 FromLineOverride=<%= @from_line_override %>
 
-<% if @hostname -%>
+<% if !@hostname.empty? -%>
 Hostname=<%= @hostname %>
 <% end -%>
-<% if @rewritedomain -%>
+<% if !@rewritedomain.empty? -%>
 RewriteDomain=<%= @rewritedomain %>
 <% end -%>
 
-<% if @authuser -%>
+<% if !@authuser.empty? -%>
 AuthUser=<%= @authuser %>
 <% end -%>
-<%- if @authpass -%>
+<%- if !@authpass.empty? -%>
 AuthPass=<%= @authpass %>
 <% end -%>
-<% if @authmethod -%>
+<% if !@authmethod.empty? -%>
 AuthMethod=<%= @authmethod %>
 <% end -%>
-<% if @usetls -%>
+<% if !@usetls.empty? -%>
 UseTLS=<%= @usetls %>
 <% end -%>
-<% if @usestarttls -%>
+<% if !@usestarttls.empty? -%>
 UseSTARTTLS=<%= @usestarttls %>
 <% end -%>
