@@ -1,7 +1,6 @@
 class ssmtp::config {
 
-    file {
-        $ssmtp::ssmtp_conf:
+    file { $ssmtp::ssmtp_conf:
             ensure  => file,
             mode    => '0640',
             owner   => 'root',

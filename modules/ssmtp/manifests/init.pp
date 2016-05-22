@@ -15,8 +15,8 @@ class ssmtp (
     $authmethod
 ) {
 
-    contains ssmtp::package
-    contains ssmtp::config
+    contain ssmtp::package
+    contain ssmtp::config
 
     Class['ssmtp::package'] -> Class['ssmtp::config']
 
