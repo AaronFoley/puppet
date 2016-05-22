@@ -13,34 +13,34 @@ FromLineOverride=<%= scope['ssmtp::from_line_override'] %>
 <% if !scope['ssmtp::hostname'].nil? %>
 Hostname=<%= scope['ssmtp::hostname'] %>
 <% end -%>
-<% if !scope['ssmtp::rewritedomain'].nill? %>
+<% if (scope['ssmtp::rewritedomain'] != nil) %>
 RewriteDomain=<%= scope['ssmtp::rewritedomain'] %>
 <% end -%>
 
-<% if !scope['ssmtp::authuser'].nill? %>
+<% if (scope['ssmtp::authuser'] != nil) %>
 AuthUser=<%= scope['ssmtp::authuser'] %>
 <% end -%>
-<%- if !scope['ssmtp::authpass'].nill? %>
+<%- if (scope['ssmtp::authpass'] != nil) %>
 AuthPass=<%= scope['ssmtp::authpass'] %>
 <% end -%>
-<% if !scope['ssmtp::authmethod'].nill? %>
+<% if (scope['ssmtp::authmethod'] != nil) %>
 AuthMethod=<%= scope['ssmtp::authmethod'] %>
 <% end -%>
-<% if !scope['ssmtp::usetls'].nill? %>
+<% if (scope['ssmtp::usetls'] != nil) %>
 UseTLS=<%= scope['ssmtp::usetls'] %>
 <% end -%>
-<% if !scope['ssmtp::usestarttls'].nill? %>
+<% if (scope['ssmtp::usestarttls'] != nil) %>
 UseSTARTTLS=<%= scope['ssmtp::usestarttls'] %>
 <% end -%>
-<% if !scope['ssmtp::tlscert'].nill? %>
+<% if (scope['ssmtp::tlscert'] != nil) %>
 TLSCert=<%= scope['ssmtp::tlscert'] %>
 <% end -%>
-<% if !scope['ssmtp::tlskey'].nill? %>
+<% if (scope['ssmtp::tlskey'] != nil) %>
 TLSKey=<%= scope['ssmtp::tlskey'] %>
 <% end -%>
-<% if !scope['ssmtp::tls_ca_file'].nill? %>
+<% if (scope['ssmtp::tls_ca_file'] != nil) %>
 TLS_CA_File=<%= scope['ssmtp::tls_ca_file'] %>
 <% end -%>
-<% if !scope['ssmtp::tls_ca_dir'].nill? %>
+<% if (scope['ssmtp::tls_ca_dir'] != nil) %>
 TLS_CA_Dir=<%= scope['ssmtp::tls_ca_dir'] %>
 <% end -%>
