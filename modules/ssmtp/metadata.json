@@ -5,6 +5,6 @@
   "license":        "WTFPL",
   "summary":        "Installs and sets up SSMTP",
   "source":         "https://github.com/aaronfoley/puppet",
-  "dependencies":   "",
+  "dependencies":   [],
   "data_provider":  "hiera"
 }
