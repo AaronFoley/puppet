@@ -1,4 +1,4 @@
 hieradata/secure
 .tmp/
-modules/
+modules/*
 !modules/base
