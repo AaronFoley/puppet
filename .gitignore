@@ -1,4 +1,6 @@
 hieradata/secure
 .tmp/
 modules/*
-!modules/base
+!modules/profiles
+!modules/roles
+modules/profiles/files/secure

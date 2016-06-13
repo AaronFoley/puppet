@@ -5,8 +5,15 @@ hierarchy:
     backend: yaml
     path: "nodes/%{trusted.certname}"
 
+  - name: "profiles"
+    backend: yaml
+
   - name: "common"
     backend: yaml
+
+  - name: "OS Family"
+    backend: yaml
+    path: "os/%{facts.os.family}"
 
   - name: "secure"
     backend: yaml
