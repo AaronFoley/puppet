@@ -1,7 +1,10 @@
 # Base profile for, contains common configuration for all nodes
 
-
 class profiles::base {
+
+    if $::osfamily == 'Archlinux' {
+        include profiles::archlinux
+    }
 
     # Set up the localadmin account
     group { 'localadmin':
