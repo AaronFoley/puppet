@@ -20,7 +20,7 @@ hierarchy:
 
   - name: "Secrure OS Family"
     backend: yaml
-    path: "secure/roles/%{::role}"
+    path: "secure/os/%{facts.os.family}"
 
   - name: "OS Family"
     backend: yaml
@@ -28,8 +28,8 @@ hierarchy:
 
   - name: "Secure Common"
     backend: yaml
-    path: "secure/roles/%{::role}"
+    path: "secure/common"
 
   - name: "Common"
     backend: yaml
-    path: "secure/roles/%{::role}"
+    path: "common"
