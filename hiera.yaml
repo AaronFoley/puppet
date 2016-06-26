@@ -2,33 +2,21 @@ version: 4
 datadir: hieradata
 hierarchy:
 
-  - name: "Secure Node"
+  - name: "Secure"
     backend: yaml
-    path: "secure/nodes/%{trusted.certname}"
+    path: "secure"
 
   - name: "Node"
     backend: yaml
-    path: "nodes/%{trusted.certname}"
+    path: "nodes/%{::trusted.certname}"
 
-  - name: "Secure Roles"
+  - name: "Profile"
     backend: yaml
-    path: "secure/roles/%{::role}"
+    path: "profiles/%{::calling_class}"
 
   - name: "Role"
     backend: yaml
-    path: "secure/roles/%{::role}"
-
-  - name: "Secrure OS Family"
-    backend: yaml
-    path: "secure/os/%{facts.os.family}"
-
-  - name: "OS Family"
-    backend: yaml
-    path: "os/%{facts.os.family}"
-
-  - name: "Secure Common"
-    backend: yaml
-    path: "secure/common"
+    path: "roles/%{::role}"
 
   - name: "Common"
     backend: yaml

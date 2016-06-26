@@ -1,6 +1,4 @@
-hieradata/secure
+hieradata/secure.yaml
 .tmp/
 modules/*
-!modules/profiles
-!modules/roles
-modules/profiles/files/secure
+site/profiles/files/secure
