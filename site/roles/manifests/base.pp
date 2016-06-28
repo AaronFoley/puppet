@@ -7,6 +7,7 @@ class roles::base {
 
     if $::osfamily == 'Archlinux' {
         include profiles::archlinux
+        include profiles::mailclient
     }
 
 }
