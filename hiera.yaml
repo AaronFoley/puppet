@@ -11,9 +11,9 @@ hierarchy:
     backend: yaml
     path: "nodes/%{::trusted.certname}"
 
-  - name: "Profile"
+  - name: "Profiles"
     backend: yaml
-    path: "%{::calling_class_path}"
+    path: "profiles"
 
   - name: "Role"
     backend: yaml
