@@ -13,7 +13,7 @@ hierarchy:
 
   - name: "Profile"
     backend: yaml
-    path: "calling_class_path"
+    path: "%{::calling_class_path}"
 
   - name: "Role"
     backend: yaml
