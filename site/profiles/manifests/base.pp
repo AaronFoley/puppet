@@ -2,10 +2,6 @@
 
 class profiles::base {
 
-    if $::osfamily == 'Archlinux' {
-        include profiles::archlinux
-    }
-
     # Set up the localadmin account
     group { 'localadmin':
         ensure  => 'present',

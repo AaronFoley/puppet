@@ -5,4 +5,8 @@ class roles::base {
 
     include profiles::base
 
+    if $::osfamily == 'Archlinux' {
+        include profiles::archlinux
+    }
+
 }

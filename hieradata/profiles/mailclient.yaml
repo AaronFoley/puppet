@@ -1,0 +1,7 @@
+---
+
+profiles::mailclient::main_config:
+  - myhostname: "%{::trusted.certname}"
+  - myorigin: "$mydomain"
+  - inet_interfaces: "loopback-only"
+  - mydestination: " "

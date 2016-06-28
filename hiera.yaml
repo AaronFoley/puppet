@@ -1,3 +1,4 @@
+---
 version: 4
 datadir: hieradata
 hierarchy:
@@ -12,7 +13,7 @@ hierarchy:
 
   - name: "Profile"
     backend: yaml
-    path: "profiles/%{::calling_class}"
+    path: "calling_class_path"
 
   - name: "Role"
     backend: yaml
